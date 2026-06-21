@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
-import mattbLogo from "../../assets/Logo.png";
+import mattbLogo from "../../assets/ico.jpg";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-[#00aeff]/95  backdrop-blur-sm z-50 border-b">
+    <header className="fixed top-0 left-0 right-0 bg-background/95  backdrop-blur-sm z-50 border-b">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
