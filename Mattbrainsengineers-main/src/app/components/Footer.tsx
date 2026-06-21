@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Building2,
   Mail,
@@ -9,9 +10,11 @@ import {
   MapPin,
 } from "lucide-react";
 import mattbLogo from "../../assets/ico.jpg";
+import { PrivacyPolicy } from "./PrivacyPolicy";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -168,13 +171,22 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
+        <div className="border-t mt-8 pt-8 flex flex-col sm:flex-row items-center justify-center gap-2 text-center text-sm text-muted-foreground">
           <p>
             &copy; {currentYear} Gritstone Constructions Company Limited. All
             rights reserved.
           </p>
+          <span className="hidden sm:inline">&middot;</span>
+          <button
+            onClick={() => setIsPrivacyOpen(true)}
+            className="hover:text-blue-600 transition-colors underline-offset-2 hover:underline"
+          >
+            Privacy Policy
+          </button>
         </div>
       </div>
+
+      <PrivacyPolicy open={isPrivacyOpen} onOpenChange={setIsPrivacyOpen} />
     </footer>
   );
 }
