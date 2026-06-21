@@ -1,6 +1,7 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { CheckCircle2, Target, Eye, Award, Calendar } from "lucide-react";
+import { CheckCircle2, Target, Eye, ShieldCheck, Calendar } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
+import siteImage from "../../assets/foundation.jpg";
 
 const values = [
   "Quality craftsmanship and attention to detail",
@@ -13,7 +14,7 @@ const values = [
 
 const stats = [
   { icon: Calendar, label: "Established", value: "2026" },
-  { icon: Award, label: "Projects Completed", value: "200+" },
+  { icon: ShieldCheck, label: "Our Promise", value: "Built On Trust" },
 ];
 
 export function About() {
@@ -24,20 +25,21 @@ export function About() {
           <div>
             <p className="text-blue-600 font-semibold mb-2">ABOUT US</p>
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Building Excellence Since 2014
+              Building Excellence in Engineering Solutions
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
               Led by CEO <strong>Matthew Nketsiah</strong>, Gritstone
-              Construction Company Limited is a trusted name in engineering
+              Constructions Company Limited is a trusted name in engineering
               excellence. Our motto, <em>"Built On Trust"</em>, reflects our
               commitment to peace of mind through quality workmanship.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              With over a decade of experience serving clients across Ghana, we
-              have built a reputation for delivering exceptional engineering and
-              construction services. Our journey began with a vision to
-              transform the built environment through innovation, integrity, and
-              unwavering commitment to excellence.
+              Matthew's path into construction began with a civil engineering
+              degree from Takoradi Technical University, followed by hands-on
+              experience with construction firms across Ghana and South Africa.
+              Drawing on that international expertise, he founded Gritstone to
+              bring world-class standards of innovation, integrity, and quality
+              to every project we undertake.
             </p>
             <p className="text-lg text-muted-foreground mb-8">
               We specialize in delivering comprehensive engineering solutions
@@ -75,8 +77,8 @@ export function About() {
           <div className="relative">
             <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1699786373847-82b005a8632a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaXZpbCUyMGVuZ2luZWVyaW5nJTIwaW5mcmFzdHJ1Y3R1cmV8ZW58MXx8fHwxNzc5MzEyODE4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Civil engineering infrastructure"
+                src={siteImage}
+                alt="Gritstone Constructions team reviewing foundation work on site"
                 className="w-full h-full object-cover"
               />
             </div>

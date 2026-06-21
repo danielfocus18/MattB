@@ -1,24 +1,45 @@
-import { ImageWithFallback } from './figma/ImageWithFallback';
-import { Badge } from './ui/badge';
+import { ImageWithFallback } from "./figma/ImageWithFallback";
+import foundation from "../../assets/foundation.jpg";
+import blocks from "../../assets/blocks.jpg";
+import roof from "../../assets/roof.jpg";
+import pop from "../../assets/pop.jpg";
+import truck1 from "../../assets/truck1.jpg";
 
-const projects = [
+const processSteps = [
   {
-    title: 'Modern Residential Complex',
-    category: 'Estate Development',
-    image: 'https://images.unsplash.com/photo-1615406020658-6c4b805f1f30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBidWlsZGluZ3xlbnwxfHx8fDE3NzkyNzE3NzJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    description: 'Complete estate development with modern amenities and sustainable design.',
+    step: "01",
+    title: "Foundation Work",
+    description:
+      "Every build starts with a solid foundation, engineered for stability and built to last.",
+    image: foundation,
   },
   {
-    title: 'Commercial Building Construction',
-    category: 'Building & Construction',
-    image: 'https://images.unsplash.com/photo-1776840724505-e659660bfefa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb25zdHJ1Y3Rpb24lMjBlbmdpbmVlcmluZyUyMGJ1aWxkaW5nfGVufDF8fHx8MTc3OTMxMjgxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    description: 'State-of-the-art commercial building with premium finishes.',
+    step: "02",
+    title: "Structural Walls",
+    description:
+      "Precision block-laying and structural framing bring each design to life.",
+    image: blocks,
   },
   {
-    title: 'Infrastructure Development',
-    category: 'Civil Engineering',
-    image: 'https://images.unsplash.com/photo-1604044478919-5b53331fa61e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMGNvbnN0cnVjdGlvbiUyMHdvcmtlcnN8ZW58MXx8fHwxNzc5MzEyODE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    description: 'Critical infrastructure project delivered on time and within budget.',
+    step: "03",
+    title: "Roofing",
+    description:
+      "Quality roofing systems that protect the structure and complete the build.",
+    image: roof,
+  },
+  {
+    step: "04",
+    title: "Interior Finishing",
+    description:
+      "P.O.P ceiling and wall cladding work that brings a refined, finished look to every space.",
+    image: pop,
+  },
+  {
+    step: "05",
+    title: "Logistics & Equipment",
+    description:
+      "Our fleet keeps materials and equipment moving, so every site stays on schedule.",
+    image: truck1,
   },
 ];
 
@@ -27,26 +48,31 @@ export function Projects() {
     <section id="projects" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+          <p className="text-blue-600 font-semibold mb-2">HOW WE BUILD</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Process</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Showcasing our commitment to excellence across diverse engineering projects
+            From foundation to finish, every stage is handled with precision and
+            care
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div key={index} className="group cursor-pointer">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          {processSteps.map((item, index) => (
+            <div key={index} className="group">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-4">
                 <ImageWithFallback
-                  src={project.image}
-                  alt={project.title}
+                  src={item.image}
+                  alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute top-3 left-3 bg-blue-600 text-white text-sm font-bold w-8 h-8 rounded-full flex items-center justify-center">
+                  {item.step}
+                </div>
               </div>
-              <Badge className="mb-2">{project.category}</Badge>
-              <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-              <p className="text-muted-foreground">{project.description}</p>
+              <h3 className="text-lg font-bold mb-2">{item.title}</h3>
+              <p className="text-sm text-muted-foreground">
+                {item.description}
+              </p>
             </div>
           ))}
         </div>
