@@ -1,4 +1,14 @@
-import { Building2, Mail, Phone, MessageCircle, Facebook, Instagram, Linkedin, MapPin } from 'lucide-react';
+import {
+  Building2,
+  Mail,
+  Phone,
+  MessageCircle,
+  Facebook,
+  Instagram,
+  Linkedin,
+  MapPin,
+} from "lucide-react";
+import mattbLogo from "../../assets/ico.jpg";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -6,7 +16,7 @@ export function Footer() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -16,42 +26,43 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">MR</span>
-              </div>
+              <img
+                src={mattbLogo}
+                alt="GRITSTONE CONTRACTORS COMPANY LIMITED "
+                className="w-12.5 h-12.5 object-contain drop-shadow-md"
+              />
               <div>
-                <h3 className="font-bold text-lg leading-tight">Mattb Rains Engineers</h3>
-                <p className="text-xs text-muted-foreground">Limited Company</p>
+                <h3 className="font-bold text-lg leading-tight">
+                  Gritstone Constructions
+                </h3>
+                <p className="text-xs text-muted-foreground">Company Limited</p>
               </div>
             </div>
             <p className="text-muted-foreground mb-4">
-              Delivering excellence in engineering solutions with a commitment to quality,
-              innovation, and client satisfaction since 2014.
+              Delivering excellence in engineering solutions with a commitment
+              to quality, innovation, and client satisfaction since 2026.
             </p>
             <p className="text-sm text-muted-foreground italic mb-4">
-              "Adwen Ma Mpuntu" - Peace of Mind Through Quality Engineering
+              "Built On Strenght!"
             </p>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://web.facebook.com/profile.php?id=61591055726609"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center hover:bg-blue-700 transition-colors"
                 aria-label="Facebook"
               >
                 <Facebook className="h-4 w-4 text-white" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/gritstone_construction?igsh=N3drdHZ3MWtmOHN4"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-8 h-8 bg-pink-600 rounded-lg flex items-center justify-center hover:bg-pink-700 transition-colors"
                 aria-label="Instagram"
               >
                 <Instagram className="h-4 w-4 text-white" />
-              </a>
-              <a
-                href="#"
-                className="w-8 h-8 bg-blue-700 rounded-lg flex items-center justify-center hover:bg-blue-800 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="h-4 w-4 text-white" />
               </a>
             </div>
           </div>
@@ -60,32 +71,50 @@ export function Footer() {
             <h4 className="font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <button onClick={() => scrollToSection('home')} className="text-muted-foreground hover:text-blue-600 transition-colors">
+                <button
+                  onClick={() => scrollToSection("home")}
+                  className="text-muted-foreground hover:text-blue-600 transition-colors"
+                >
                   Home
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('services')} className="text-muted-foreground hover:text-blue-600 transition-colors">
+                <button
+                  onClick={() => scrollToSection("services")}
+                  className="text-muted-foreground hover:text-blue-600 transition-colors"
+                >
                   Services
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('about')} className="text-muted-foreground hover:text-blue-600 transition-colors">
+                <button
+                  onClick={() => scrollToSection("about")}
+                  className="text-muted-foreground hover:text-blue-600 transition-colors"
+                >
                   About Us
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('projects')} className="text-muted-foreground hover:text-blue-600 transition-colors">
+                <button
+                  onClick={() => scrollToSection("projects")}
+                  className="text-muted-foreground hover:text-blue-600 transition-colors"
+                >
                   Projects
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('testimonials')} className="text-muted-foreground hover:text-blue-600 transition-colors">
+                <button
+                  onClick={() => scrollToSection("testimonials")}
+                  className="text-muted-foreground hover:text-blue-600 transition-colors"
+                >
                   Testimonials
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('contact')} className="text-muted-foreground hover:text-blue-600 transition-colors">
+                <button
+                  onClick={() => scrollToSection("contact")}
+                  className="text-muted-foreground hover:text-blue-600 transition-colors"
+                >
                   Contact
                 </button>
               </li>
@@ -115,19 +144,27 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MessageCircle className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <a href="https://wa.me/233246836630" target="_blank" rel="noopener noreferrer" className="hover:text-green-600">
+                <a
+                  href="https://wa.me/233246836630"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-green-600"
+                >
                   WhatsApp
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <a href="mailto:matthewenki.63@gmail.com" className="hover:text-blue-600 break-all">
-                  matthewenki.63@gmail.com
+                <a
+                  href="mailto:gritstoneconstructioncompany@gmail.com"
+                  className="hover:text-blue-600 break-all"
+                >
+                  gritstoneconstructioncompany@gmail.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                <span>Accra, Ghana</span>
+                <span>WR-205-4261 Esaaman,Shama-Western Region,Ghana</span>
               </li>
               <li className="flex items-start gap-2">
                 <Building2 className="h-4 w-4 mt-0.5 flex-shrink-0" />
@@ -138,7 +175,10 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {currentYear} Mattb Rains Engineers Limited Company. All rights reserved.</p>
+          <p>
+            &copy; {currentYear} Gritstone Constructions Company Limited. All
+            rights reserved.
+          </p>
         </div>
       </div>
     </footer>

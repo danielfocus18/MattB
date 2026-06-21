@@ -1,19 +1,19 @@
-import { ImageWithFallback } from './figma/ImageWithFallback';
-import { CheckCircle2, Target, Eye, Award, Calendar } from 'lucide-react';
-import { Card, CardContent } from './ui/card';
+import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { CheckCircle2, Target, Eye, Award, Calendar } from "lucide-react";
+import { Card, CardContent } from "./ui/card";
 
 const values = [
-  'Quality craftsmanship and attention to detail',
-  'Timely project delivery and execution',
-  'Professional engineering expertise',
-  'Innovative and sustainable solutions',
-  'Client satisfaction and transparency',
-  'Safety-first approach on all projects',
+  "Quality craftsmanship and attention to detail",
+  "Timely project delivery and execution",
+  "Professional engineering expertise",
+  "Innovative and sustainable solutions",
+  "Client satisfaction and transparency",
+  "Safety-first approach on all projects",
 ];
 
 const stats = [
-  { icon: Calendar, label: 'Established', value: '2014' },
-  { icon: Award, label: 'Projects Completed', value: '200+' },
+  { icon: Calendar, label: "Established", value: "2026" },
+  { icon: Award, label: "Projects Completed", value: "200+" },
 ];
 
 export function About() {
@@ -23,29 +23,37 @@ export function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <p className="text-blue-600 font-semibold mb-2">ABOUT US</p>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Building Excellence Since 2014</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Building Excellence Since 2014
+            </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Led by CEO <strong>Matthew Nketsiah</strong>, Mattb Rains Engineers Limited Company
-              is a trusted name in engineering excellence. Our motto, <em>"Adwen Ma Mpuntu"</em>,
-              reflects our commitment to peace of mind through quality workmanship.
+              Led by CEO <strong>Matthew Nketsiah</strong>, Gritstone
+              Construction Company Limited is a trusted name in engineering
+              excellence. Our motto, <em>"Built On Trust"</em>, reflects our
+              commitment to peace of mind through quality workmanship.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
-              With over a decade of experience serving clients across Ghana, we have built a
-              reputation for delivering exceptional engineering and construction services. Our
-              journey began with a vision to transform the built environment through innovation,
-              integrity, and unwavering commitment to excellence.
+              With over a decade of experience serving clients across Ghana, we
+              have built a reputation for delivering exceptional engineering and
+              construction services. Our journey began with a vision to
+              transform the built environment through innovation, integrity, and
+              unwavering commitment to excellence.
             </p>
             <p className="text-lg text-muted-foreground mb-8">
-              We specialize in delivering comprehensive engineering solutions across civil works,
-              construction, renovation, estate development, and specialized finishes. Our team
-              combines technical expertise with innovative thinking to bring your vision to life.
+              We specialize in delivering comprehensive engineering solutions
+              across civil works, construction, renovation, estate development,
+              and specialized finishes. Our team combines technical expertise
+              with innovative thinking to bring your vision to life.
             </p>
 
             <div className="grid grid-cols-2 gap-4 mb-6">
               {stats.map((stat, index) => {
                 const Icon = stat.icon;
                 return (
-                  <div key={index} className="text-center p-4 bg-blue-600 rounded-lg text-white">
+                  <div
+                    key={index}
+                    className="text-center p-4 bg-blue-600 rounded-lg text-white"
+                  >
                     <Icon className="h-6 w-6 mx-auto mb-2" />
                     <div className="text-2xl font-bold mb-1">{stat.value}</div>
                     <div className="text-sm opacity-90">{stat.label}</div>
@@ -86,10 +94,8 @@ export function About() {
                 <div>
                   <h3 className="text-xl font-bold mb-3">Our Mission</h3>
                   <p className="text-muted-foreground">
-                    To deliver world-class engineering and construction solutions that exceed client
-                    expectations while maintaining the highest standards of safety, quality, and
-                    sustainability. We are committed to building infrastructure that transforms
-                    communities and stands the test of time.
+                    To deliver high-quality engineering and construction
+                    services that contribute to sustainable development.
                   </p>
                 </div>
               </div>
@@ -105,10 +111,8 @@ export function About() {
                 <div>
                   <h3 className="text-xl font-bold mb-3">Our Vision</h3>
                   <p className="text-muted-foreground">
-                    To be the leading engineering and construction firm in Ghana and West Africa,
-                    recognized for innovation, excellence, and integrity. We envision creating
-                    sustainable built environments that improve quality of life and drive economic
-                    growth across the region.
+                    To become a leading engineering and real estate development
+                    company recognized for excellence and innovation.
                   </p>
                 </div>
               </div>
