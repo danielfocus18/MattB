@@ -55,7 +55,7 @@ export function Hero() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
-          <p className="text-blue-400 font-medium mb-4">BUILT ON STRENGHT!</p>
+          <p className="text-blue-400 font-medium mb-4">BUILT ON STRENGTH</p>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Building Excellence in Engineering Solutions
           </h1>

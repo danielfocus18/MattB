@@ -43,7 +43,7 @@ export function Footer() {
               to quality, innovation, and client satisfaction since 2026.
             </p>
             <p className="text-sm text-muted-foreground italic mb-4">
-              "Built On Strenght!"
+              "Built On Strength"
             </p>
             <div className="flex gap-3">
               <a

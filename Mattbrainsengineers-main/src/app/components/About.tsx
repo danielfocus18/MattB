@@ -14,7 +14,7 @@ const values = [
 
 const stats = [
   { icon: Calendar, label: "Established", value: "2026" },
-  { icon: ShieldCheck, label: "Our Promise", value: "Built On Trust" },
+  { icon: ShieldCheck, label: "Our Promise", value: "Built On Strength" },
 ];
 
 export function About() {
@@ -30,7 +30,7 @@ export function About() {
             <p className="text-lg text-muted-foreground mb-6">
               Led by CEO <strong>Matthew Nketsiah</strong>, Gritstone
               Constructions Company Limited is a trusted name in engineering
-              excellence. Our motto, <em>"Built On Strenght!"</em>, reflects our
+              excellence. Our motto, <em>"Built On Strength"</em>, reflects our
               commitment to peace of mind through quality workmanship.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
