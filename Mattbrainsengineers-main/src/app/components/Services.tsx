@@ -1,36 +1,69 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
-import { Building2, HardHat, Wrench, Home, TrendingUp, MessageSquare } from 'lucide-react';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+import {
+  Building2,
+  Home,
+  HardHat,
+  Route,
+  ClipboardList,
+  MessageSquare,
+  Pickaxe,
+  PaintRoller,
+} from "lucide-react";
 
 const services = [
   {
     icon: Building2,
-    title: 'Civil Engineering Works',
-    description: 'Comprehensive civil engineering solutions including infrastructure design, surveying, and project planning.',
-  },
-  {
-    icon: HardHat,
-    title: 'Building & Construction',
-    description: 'Quality construction services for residential, commercial, and industrial projects with attention to detail.',
-  },
-  {
-    icon: Wrench,
-    title: 'Building & Renovation',
-    description: 'Expert renovation and refurbishment services to modernize and enhance existing structures.',
+    title: "Construction of Other Civil Engineering Projects",
+    description:
+      "Comprehensive civil engineering solutions covering infrastructure, surveying, and large-scale project execution.",
   },
   {
     icon: Home,
-    title: 'Estate Development',
-    description: 'Complete estate development solutions from planning to execution for residential and commercial properties.',
+    title: "Real Estate Activities",
+    description:
+      "End-to-end real estate development and property solutions tailored to client needs.",
   },
   {
-    icon: TrendingUp,
-    title: 'P.O.P & Wall Cladding Works',
-    description: 'Professional plaster of Paris and wall cladding installations for aesthetic and functional finishes.',
+    icon: HardHat,
+    title: "Building Construction & Renovation",
+    description:
+      "Quality construction and renovation services for residential, commercial, and industrial properties.",
+  },
+  {
+    icon: Route,
+    title: "Road Construction",
+    description:
+      "Professional road construction and infrastructure works engineered to last.",
+  },
+  {
+    icon: ClipboardList,
+    title: "Project Management",
+    description:
+      "Expert oversight from planning to completion, keeping projects on schedule and within budget.",
   },
   {
     icon: MessageSquare,
-    title: 'Consultancy',
-    description: 'Expert engineering consultancy services to guide your projects from concept to completion.',
+    title: "Engineering Consultancy",
+    description:
+      "Expert engineering consultancy services to guide your projects from concept to completion.",
+  },
+  {
+    icon: Pickaxe,
+    title: "Support Activities for Mining and Quarrying",
+    description:
+      "Specialized support services for mining and quarry operations across Ghana.",
+  },
+  {
+    icon: PaintRoller,
+    title: "P.O.P & Wall Cladding Works",
+    description:
+      "Professional plaster of Paris and wall cladding installations for aesthetic and functional finishes.",
   },
 ];
 
@@ -41,7 +74,8 @@ export function Services() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Delivering comprehensive engineering solutions tailored to your needs
+            Delivering comprehensive engineering solutions tailored to your
+            needs
           </p>
         </div>
 

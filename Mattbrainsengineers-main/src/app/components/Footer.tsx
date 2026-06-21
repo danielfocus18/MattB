@@ -104,14 +104,6 @@ export function Footer() {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection("testimonials")}
-                  className="text-muted-foreground hover:text-blue-600 transition-colors"
-                >
-                  Testimonials
-                </button>
-              </li>
-              <li>
-                <button
                   onClick={() => scrollToSection("contact")}
                   className="text-muted-foreground hover:text-blue-600 transition-colors"
                 >
@@ -124,12 +116,14 @@ export function Footer() {
           <div>
             <h4 className="font-bold mb-4">Services</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Civil Engineering Works</li>
-              <li>Building & Construction</li>
-              <li>Building & Renovation</li>
-              <li>Estate Development</li>
-              <li>P.O.P & Wall Cladding</li>
-              <li>Consultancy</li>
+              <li>Civil Engineering Projects</li>
+              <li>Real Estate Activities</li>
+              <li>Building Construction & Renovation</li>
+              <li>Road Construction</li>
+              <li>Project Management</li>
+              <li>Engineering Consultancy</li>
+              <li>Mining & Quarrying Support</li>
+              <li>P.O.P & Wall Cladding Works</li>
             </ul>
           </div>
 

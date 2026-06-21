@@ -176,16 +176,26 @@ export function Contact() {
                       required
                     >
                       <option value="">Select a service</option>
-                      <option value="civil">Civil Engineering Works</option>
-                      <option value="construction">
-                        Building and Construction
+                      <option value="civil">
+                        Construction of Other Civil Engineering Projects
                       </option>
-                      <option value="renovation">
-                        Building and Renovation
+                      <option value="real-estate">
+                        Real Estate Activities
                       </option>
-                      <option value="estate">Estate Development</option>
-                      <option value="pop">POP and Wall Cladding Works</option>
-                      <option value="consultancy">Consultancy</option>
+                      <option value="construction-renovation">
+                        Building Construction & Renovation
+                      </option>
+                      <option value="road">Road Construction</option>
+                      <option value="project-management">
+                        Project Management
+                      </option>
+                      <option value="consultancy">
+                        Engineering Consultancy
+                      </option>
+                      <option value="mining-quarry">
+                        Support Activities for Mining and Quarrying
+                      </option>
+                      <option value="pop">P.O.P & Wall Cladding Works</option>
                     </select>
                   </div>
 

@@ -30,7 +30,7 @@ export function About() {
             <p className="text-lg text-muted-foreground mb-6">
               Led by CEO <strong>Matthew Nketsiah</strong>, Gritstone
               Constructions Company Limited is a trusted name in engineering
-              excellence. Our motto, <em>"Built On Trust"</em>, reflects our
+              excellence. Our motto, <em>"Built On Strenght!"</em>, reflects our
               commitment to peace of mind through quality workmanship.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
