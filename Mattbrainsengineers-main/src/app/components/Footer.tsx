@@ -47,7 +47,7 @@ export function Footer() {
               </div>
               <p className="text-muted-foreground mb-4">
                 Delivering excellence in engineering solutions with a commitment
-                to quality, innovation, and client satisfaction since 2026.
+                to quality, innovation, and client satisfaction since 2020.
               </p>
               <p className="text-sm text-muted-foreground italic mb-4">
                 "Built On Strength"
