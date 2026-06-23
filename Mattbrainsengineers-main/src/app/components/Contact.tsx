@@ -23,6 +23,7 @@ import {
   Loader2,
 } from "lucide-react";
 import { toast } from "sonner";
+import { FadeIn } from "./FadeIn";
 
 const EMAILJS_SERVICE_ID = "service_74gxv3f";
 const EMAILJS_TEMPLATE_ID = "template_6zdo7xh";
@@ -82,36 +83,42 @@ export function Contact() {
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <p className="text-blue-600 font-semibold mb-2">CONTACT US</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to start your project? Contact us today for a free
-            consultation and quotation
-          </p>
-        </div>
+        <FadeIn>
+          <div className="text-center mb-12">
+            <p className="text-blue-600 font-semibold mb-2">CONTACT US</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Get in Touch
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Ready to start your project? Contact us today for a free
+              consultation and quotation
+            </p>
+          </div>
+        </FadeIn>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <Button size="lg" onClick={handleCall}>
-            <Phone className="h-5 w-5 mr-2" />
-            Call Now
-          </Button>
-          <Button
-            size="lg"
-            onClick={handleWhatsApp}
-            className="bg-green-600 hover:bg-green-700"
-          >
-            <MessageCircle className="h-5 w-5 mr-2" />
-            WhatsApp
-          </Button>
-          <Button size="lg" variant="outline" onClick={handleEmail}>
-            <Mail className="h-5 w-5 mr-2" />
-            Email Us
-          </Button>
-        </div>
+        <FadeIn delay={0.1}>
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            <Button size="lg" onClick={handleCall}>
+              <Phone className="h-5 w-5 mr-2" />
+              Call Now
+            </Button>
+            <Button
+              size="lg"
+              onClick={handleWhatsApp}
+              className="bg-green-600 hover:bg-green-700"
+            >
+              <MessageCircle className="h-5 w-5 mr-2" />
+              WhatsApp
+            </Button>
+            <Button size="lg" variant="outline" onClick={handleEmail}>
+              <Mail className="h-5 w-5 mr-2" />
+              Email Us
+            </Button>
+          </div>
+        </FadeIn>
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div className="lg:col-span-2">
+          <FadeIn delay={0.15} className="lg:col-span-2">
             <Card>
               <CardHeader>
                 <CardTitle>Request a Free Quotation</CardTitle>
@@ -234,9 +241,9 @@ export function Contact() {
                 </form>
               </CardContent>
             </Card>
-          </div>
+          </FadeIn>
 
-          <div className="space-y-6">
+          <FadeIn delay={0.25} className="space-y-6">
             <Card>
               <CardHeader>
                 <CardTitle>Contact Information</CardTitle>
@@ -252,7 +259,7 @@ export function Contact() {
                       href="tel:+233246836630"
                       className="text-sm text-muted-foreground hover:text-blue-600"
                     >
-                      +233 24 683 6630
+                      +233 24 683 6630 / +233 20 737 8158
                     </a>
                   </div>
                 </div>
@@ -341,10 +348,10 @@ export function Contact() {
                 <p className="text-sm text-blue-100 mt-2"></p>
               </CardContent>
             </Card>
-          </div>
+          </FadeIn>
         </div>
 
-        <div className="mt-12">
+        <FadeIn className="mt-12">
           <Card>
             <CardHeader>
               <CardTitle>Find Us on the Map</CardTitle>
@@ -365,7 +372,7 @@ export function Contact() {
               />
             </CardContent>
           </Card>
-        </div>
+        </FadeIn>
       </div>
     </section>
   );

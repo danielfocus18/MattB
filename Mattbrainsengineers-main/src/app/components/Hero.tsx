@@ -3,12 +3,13 @@ import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import { FadeIn } from "./FadeIn";
 import build1 from "../../assets/build1.jpg";
 import road from "../../assets/road.jpg";
 
 const heroImages = [
-  { src: build1, alt: "Gritstone Constructions building project" },
-  { src: road, alt: "Gritstone Constructions road construction project" },
+  { src: build1, alt: "Gritstone Construction building project" },
+  { src: road, alt: "Gritstone Construction road construction project" },
 ];
 
 export function Hero() {
@@ -54,13 +55,13 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl">
+        <FadeIn className="max-w-3xl">
           <p className="text-blue-400 font-medium mb-4">BUILT ON STRENGTH</p>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Building Excellence in Engineering Solutions
           </h1>
           <p className="text-xl text-gray-200 mb-8">
-            Gritstone Constructions Company Limited delivers trusted civil
+            Gritstone Construction Company Limited delivers trusted civil
             engineering, construction, real estate development, and project
             management services with a commitment to quality, reliability, and
             innovation.
@@ -83,7 +84,7 @@ export function Hero() {
               Get in Touch
             </Button>
           </div>
-        </div>
+        </FadeIn>
       </div>
     </section>
   );

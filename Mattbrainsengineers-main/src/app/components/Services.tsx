@@ -15,6 +15,7 @@ import {
   Pickaxe,
   PaintRoller,
 } from "lucide-react";
+import { FadeIn } from "./FadeIn";
 
 const services = [
   {
@@ -71,29 +72,35 @@ export function Services() {
   return (
     <section id="services" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Delivering comprehensive engineering solutions tailored to your
-            needs
-          </p>
-        </div>
+        <FadeIn>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Our Services
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Delivering comprehensive engineering solutions tailored to your
+              needs
+            </p>
+          </div>
+        </FadeIn>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardHeader>
-                  <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                    <Icon className="h-6 w-6 text-white" />
-                  </div>
-                  <CardTitle>{service.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>{service.description}</CardDescription>
-                </CardContent>
-              </Card>
+              <FadeIn key={index} delay={(index % 3) * 0.1}>
+                <Card className="hover:shadow-lg transition-shadow h-full">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                      <Icon className="h-6 w-6 text-white" />
+                    </div>
+                    <CardTitle>{service.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>{service.description}</CardDescription>
+                  </CardContent>
+                </Card>
+              </FadeIn>
             );
           })}
         </div>

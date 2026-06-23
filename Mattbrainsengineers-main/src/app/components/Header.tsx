@@ -21,12 +21,12 @@ export function Header() {
           <div className="flex items-center gap-2">
             <img
               src={mattbLogo}
-              alt="GRITSTONE CONTRACTORS COMPANY LIMITED "
+              alt="Gritstone Construction Company Limited"
               className="w-12.5 h-12.5 object-contain drop-shadow-md"
             />
             <div>
               <h1 className="font-bold text-lg leading-tight">
-                GRITSTONE CONSTRUCTIONS
+                GRITSTONE CONSTRUCTION
               </h1>
               <p className="text-xs text-muted-foreground">Company Limited</p>
             </div>

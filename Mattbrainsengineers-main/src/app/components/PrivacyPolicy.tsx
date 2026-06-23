@@ -18,16 +18,14 @@ export function PrivacyPolicy({
       <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle>Privacy Policy</DialogTitle>
-          <DialogDescription>
-            Last updated: June 2026
-          </DialogDescription>
+          <DialogDescription>Last updated: June 2026</DialogDescription>
         </DialogHeader>
 
         <div className="space-y-4 text-sm text-muted-foreground">
           <p>
-            Gritstone Constructions Company Limited ("Gritstone," "we," "us,"
-            or "our") respects your privacy. This policy explains what
-            information we collect through this website and how we use it.
+            Gritstone Construction Company Limited ("Gritstone," "we," "us," or
+            "our") respects your privacy. This policy explains what information
+            we collect through this website and how we use it.
           </p>
 
           <div>
@@ -48,9 +46,9 @@ export function PrivacyPolicy({
             </h4>
             <p>
               We use the information you provide solely to respond to your
-              enquiry, prepare quotations, and discuss potential projects. We
-              do not sell, rent, or share your information with third parties
-              for marketing purposes.
+              enquiry, prepare quotations, and discuss potential projects. We do
+              not sell, rent, or share your information with third parties for
+              marketing purposes.
             </p>
           </div>
 
@@ -59,10 +57,10 @@ export function PrivacyPolicy({
               Third-Party Services
             </h4>
             <p>
-              Our contact form uses EmailJS, a third-party service, to
-              deliver your message directly to our email inbox. EmailJS
-              processes the data only to send that email and does not use it
-              for any other purpose. We recommend reviewing{" "}
+              Our contact form uses EmailJS, a third-party service, to deliver
+              your message directly to our email inbox. EmailJS processes the
+              data only to send that email and does not use it for any other
+              purpose. We recommend reviewing{" "}
               <a
                 href="https://www.emailjs.com/legal/privacy-policy/"
                 target="_blank"
@@ -81,16 +79,13 @@ export function PrivacyPolicy({
             </h4>
             <p>
               We retain enquiry information only for as long as necessary to
-              respond to you and manage any resulting project. If you would
-              like us to delete your information, contact us using the
-              details below.
+              respond to you and manage any resulting project. If you would like
+              us to delete your information, contact us using the details below.
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-1">
-              Your Rights
-            </h4>
+            <h4 className="font-semibold text-foreground mb-1">Your Rights</h4>
             <p>
               You may request access to, correction of, or deletion of any
               personal information you've submitted to us at any time by
@@ -116,7 +111,7 @@ export function PrivacyPolicy({
               <br />
               Email: gritstoneconstructioncompany@gmail.com
               <br />
-              Phone: +233 24 683 6630
+              Phone: +233 24 683 6630 /+233 20 737 8158
               <br />
               Address: WR-205-4261 Esaaman, Shama, Western Region, Ghana
             </p>
